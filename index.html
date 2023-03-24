@@ -1,0 +1,155 @@
+﻿﻿<!DOCTYPE html>
+<html lang="pt/BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercícios e Projetos para testes uso de HTML e CSS">
+
+
+<title>Texto Dinâmico By Iraê</title> 
+</head>
+<style>
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+      height: 100%;
+      width: 100%;
+      color: #fff;
+      font-family: 'Anonymous Pro', monospace;
+      background-color: black;
+      display: flex;
+}
+
+#logo{
+ 	width: 200px;
+ 	height: 200px;
+ 	border-radius: 50%;
+ 	position: center;
+ 	border: solid yellowgreen;
+}
+.line {
+      position: relative;
+      width: 0px;
+      margin: auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+
+}
+/*Animação*/
+.anim-typewriter {
+      animation: typewriter 40s steps(20) 500ms infinite,
+      blinkTextCursor 500ms steps(20) infinite normal;
+}
+@keyframes typewriter {
+      0% {
+            width: 0px;
+      }
+      10% {
+            width: 0px;
+      }
+      25% {
+            width: 160px;
+      }
+      75% {
+            width: 3000px;
+      }
+      90% {
+            width: 0px;
+      }
+      100% {
+            width: 0px;
+      }
+}
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+/* ESTILIZANDO O TEXTO DO CENTRO */
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  
+        h2 {
+            font-size: 5em;
+            font-family: serif;
+            color: #008000;
+            text-align: center;
+            animation: animate 
+                1.5s linear infinite;
+        }
+  
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+  
+            50% {
+                opacity: 0.7;
+            }
+  
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+
+</style>
+
+
+<body>
+
+    <div>
+        <h2>DESENVOLVEDORES WEB <br>
+               2023
+         </h2>
+    </div>
+
+
+<p class="line anim-typewriter">
+<img src="Desenvolvedor WEB 2023.png" id="logo">
+Olá Alunos! 
+
+Vocês serão futuros Desenvolvedores Web.
+<br><br>
+
+Esperamos que estejam gostando do curso!<br><br>
+
+Ficamos felizes de ter vocês como alunos<br>
+e faremos de tudo para  auxiliar vocês <br>
+nesta jornada e etapa de sua formação. <br> 
+
+Esperamos que colham ótimos frutos desse aprendizado<br>
+ e obtenham  sucesso. <br>Votos de Prof. Iraê :-)<br>
+
+
+ <marquee> Bons estudos!
+Vamos lá?"Bora Codar...<br>
+            </marquee> 
+               
+
+
+
+
+
+</p>
+
+</p>
+
+</body>
+</html>
